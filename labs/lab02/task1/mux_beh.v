@@ -6,10 +6,10 @@
 // a variable in behavioral modeling.
 
 module mux_beh (
-  input       I0,
-  input       I1,
-  input       S,
-  output wire Y
+  input  wire I0,
+  input  wire I1,
+  input  wire S,
+  output reg  Y   
 );
 
   always @(*) begin
