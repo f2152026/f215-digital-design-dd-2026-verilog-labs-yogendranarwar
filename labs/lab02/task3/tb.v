@@ -17,8 +17,8 @@ module tb;
     .EQ(t_eq)
   );
 
-  // Waveform dump configuration
-  string vcd_file;
+  // Waveform dump configuration (Standard Verilog string buffer)
+  reg [1024*8-1:0] vcd_file;
   initial begin
     if ($value$plusargs("vcd=%s", vcd_file)) begin
       $dumpfile(vcd_file);
